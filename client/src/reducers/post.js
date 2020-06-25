@@ -32,12 +32,6 @@ export default function (state = initialState, action) {
         posts: [payload, ...state.posts],
         loading: false,
       };
-    case GET_POSTS:
-      return {
-        ...state,
-        posts: payload,
-        loading: false,
-      };
     case GET_POST:
       return {
         ...state,
